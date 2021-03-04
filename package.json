@@ -1,0 +1,30 @@
+{
+  "name": "ratp-ts",
+  "version": "1.0.0",
+  "description": "ratp test",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.31",
+    "@types/swagger-ui-express": "^4.1.2",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
